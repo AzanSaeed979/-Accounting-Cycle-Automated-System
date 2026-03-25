@@ -1,0 +1,279 @@
+.fs-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.fs-container h1 {
+  font-size: 2.5rem;
+  color: #1a1a1a;
+  margin-bottom: 30px;
+  border-bottom: 3px solid #0066cc;
+  padding-bottom: 10px;
+}
+
+.controls {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.controls label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+  color: #333;
+}
+
+.controls select {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.95rem;
+}
+
+.financial-statements {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 40px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.income-statement,
+.balance-sheet {
+  margin-bottom: 50px;
+  page-break-inside: avoid;
+}
+
+.statement-header {
+  text-align: center;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #0066cc;
+}
+
+.statement-header h2 {
+  font-size: 1.4rem;
+  color: #1a1a1a;
+  margin: 0 0 10px 0;
+}
+
+.statement-header h3 {
+  font-size: 1.1rem;
+  color: #0066cc;
+  margin: 0 0 10px 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.statement-header p {
+  color: #666;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.financial-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+}
+
+.financial-table td {
+  padding: 10px 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.financial-table td:last-child {
+  text-align: right;
+  font-family: monospace;
+  width: 120px;
+}
+
+.section-header {
+  background: linear-gradient(135deg, #0066cc 0%, #0052a3 100%);
+  color: white;
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+.section-header td {
+  padding: 12px 15px;
+  border: none;
+}
+
+.category-header {
+  background: #e6ecff;
+  font-weight: 600;
+  border-top: 1px solid #0066cc;
+}
+
+.category-header td {
+  color: #0066cc;
+  padding: 10px 15px;
+}
+
+.subtotal-line {
+  background: #f0f4ff;
+  border-top: 2px solid #0066cc;
+  border-bottom: 2px solid #0066cc;
+  font-weight: 600;
+}
+
+.subtotal-line td {
+  color: #0066cc;
+  padding: 12px 15px;
+}
+
+.total-line {
+  background: #f0f4ff;
+  border-top: 3px double #0066cc;
+  border-bottom: 3px double #0066cc;
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+.total-line td {
+  color: #0066cc;
+  padding: 12px 15px;
+}
+
+.indent {
+  padding-left: 40px !important;
+}
+
+.positive {
+  color: #28a745;
+}
+
+.negative {
+  color: #dc3545;
+}
+
+.accounting-equation {
+  background: #f0f4ff;
+  padding: 20px;
+  border-radius: 4px;
+  border-left: 4px solid #0066cc;
+  margin: 20px 0;
+}
+
+.accounting-equation h4 {
+  margin-top: 0;
+  color: #1a1a1a;
+}
+
+.accounting-equation p {
+  margin: 8px 0;
+  color: #333;
+  font-weight: 500;
+}
+
+.accounting-equation.balanced {
+  background: #d4edda;
+  border-left-color: #28a745;
+}
+
+.accounting-equation.unbalanced {
+  background: #f8d7da;
+  border-left-color: #dc3545;
+}
+
+.balanced-msg {
+  color: #155724;
+  font-weight: 600;
+}
+
+.unbalanced-msg {
+  color: #721c24;
+  font-weight: 600;
+}
+
+.generated-at {
+  text-align: right;
+  color: #666;
+  font-size: 0.85rem;
+  margin-top: 20px;
+}
+
+.other-statements {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.other-statements h3 {
+  margin-top: 0;
+  color: #1a1a1a;
+}
+
+.other-statements ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.other-statements li {
+  padding: 10px;
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-align: center;
+}
+
+.other-statements li:hover {
+  background: #e6ecff;
+  border-color: #0066cc;
+}
+
+.other-statements li.active {
+  background: #0066cc;
+  color: white;
+  border-color: #0052a3;
+}
+
+.error {
+  background-color: #fee;
+  border: 1px solid #fcc;
+  color: #c00;
+  padding: 15px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.loading {
+  text-align: center;
+  padding: 40px;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+@media print {
+  .controls,
+  .other-statements,
+  .fs-container h1 {
+    display: none;
+  }
+
+  .financial-statements {
+    padding: 0;
+    box-shadow: none;
+    border: none;
+  }
+
+  .statement-header {
+    page-break-inside: avoid;
+  }
+}

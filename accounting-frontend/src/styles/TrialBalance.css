@@ -1,0 +1,226 @@
+.tb-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.tb-container h1 {
+  font-size: 2.5rem;
+  color: #1a1a1a;
+  margin-bottom: 30px;
+  border-bottom: 3px solid #0066cc;
+  padding-bottom: 10px;
+}
+
+.controls {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.controls label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+  color: #333;
+}
+
+.controls select {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.95rem;
+}
+
+.trial-balance-report {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.report-header {
+  text-align: center;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #0066cc;
+}
+
+.report-header h2 {
+  font-size: 1.5rem;
+  color: #1a1a1a;
+  margin: 0 0 10px 0;
+}
+
+.report-header h3 {
+  font-size: 1.2rem;
+  color: #0066cc;
+  margin: 0 0 10px 0;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.report-header p {
+  color: #666;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.trial-balance-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.trial-balance-table thead {
+  background: linear-gradient(135deg, #0066cc 0%, #0052a3 100%);
+  color: white;
+}
+
+.trial-balance-table th {
+  padding: 12px 15px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.trial-balance-table th.right {
+  text-align: right;
+}
+
+.trial-balance-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.trial-balance-table .code {
+  font-family: monospace;
+  color: #0066cc;
+  font-weight: 600;
+}
+
+.trial-balance-table td.right {
+  text-align: right;
+  font-family: monospace;
+  color: #2c5aa0;
+}
+
+.trial-balance-table tbody tr:hover {
+  background: #f9f9f9;
+}
+
+.trial-balance-table tfoot {
+  background: #f5f5f5;
+  border-top: 2px solid #0066cc;
+  font-weight: 600;
+}
+
+.trial-balance-table tfoot tr.totals td {
+  padding: 15px;
+  color: #0066cc;
+  font-size: 1.05rem;
+}
+
+.balance-verification {
+  background: #f0f4ff;
+  padding: 20px;
+  border-radius: 4px;
+  border-left: 4px solid #0066cc;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.balance-verification.balanced {
+  background: #d4edda;
+  border-left-color: #28a745;
+}
+
+.balance-verification.unbalanced {
+  background: #f8d7da;
+  border-left-color: #dc3545;
+}
+
+.balanced-msg {
+  color: #155724;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.unbalanced-msg {
+  color: #721c24;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.balance-verification p {
+  margin: 5px 0;
+}
+
+.generated-at {
+  text-align: right;
+  color: #666;
+  font-size: 0.85rem;
+  margin-top: 20px;
+}
+
+.other-balances {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.other-balances h3 {
+  margin-top: 0;
+  color: #1a1a1a;
+}
+
+.other-balances ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.other-balances li {
+  padding: 10px;
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.other-balances li:hover {
+  background: #e6ecff;
+  border-color: #0066cc;
+}
+
+.other-balances li.active {
+  background: #0066cc;
+  color: white;
+  border-color: #0052a3;
+}
+
+.error {
+  background-color: #fee;
+  border: 1px solid #fcc;
+  color: #c00;
+  padding: 15px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.loading {
+  text-align: center;
+  padding: 40px;
+  font-size: 1.2rem;
+  color: #666;
+}
